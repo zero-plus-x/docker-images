@@ -8,6 +8,13 @@ Pre-requisites
 
 * [Docker](https://docs.docker.com/engine/installation/)
 
+Images
+------
+
+| Name                                         | Description                                                |
+|----------------------------------------------|------------------------------------------------------------|
+| [zeroplusx/middleman-build](middleman-build) | Build container for Ruby/Bundler/Middleman static websites |
+
 Snippets
 --------
 
