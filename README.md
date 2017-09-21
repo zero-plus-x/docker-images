@@ -11,10 +11,9 @@ Pre-requisites
 Images
 ------
 
-| Name                                           | Description                                                 |
-|------------------------------------------------|-------------------------------------------------------------|
-| [zeroplusx/middleman-build](middleman-build)   | Build container for Ruby/Bundler/Middleman static websites  |
-| [zeroplusx/middleman-server](middleman-server) | Server container for Ruby/Bundler/Middleman static websites |
+| Name                             | Description                                                 |
+|----------------------------------|-------------------------------------------------------------|
+| [zeroplusx/middleman](middleman) | Ruby/Bundler/Middleman image for generating static websites |
 
 Snippets
 --------

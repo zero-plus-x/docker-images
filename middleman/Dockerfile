@@ -16,4 +16,8 @@ RUN apk --no-cache add \
 		build-base && \
 	apk --no-cache del wget
 
-ENTRYPOINT bundle install && middleman build
+ADD entrypoint.sh /
+
+ENTRYPOINT ["/entrypoint.sh"]
+
+EXPOSE 4567
