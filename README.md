@@ -1,23 +1,20 @@
 0+X Docker Images
 =================
-
 A variety of different docker images curated by 0+X, mainly for internal work.
 
 Pre-requisites
 --------------
-
 * [Docker](https://docs.docker.com/engine/installation/)
 
 Images
 ------
-
 | Name                             | Description                                                 |
 |----------------------------------|-------------------------------------------------------------|
 | [zeroplusx/middleman](middleman) | Ruby/Bundler/Middleman image for generating static websites |
+| [zeroplusx/yarn](yarn)           | node/npm/yarn image for working with nodejs applications    |
 
 Snippets
 --------
-
 Useful snippets for cleanups etc.
 
 | **Action**                                                       | **Snippet** |
@@ -33,5 +30,4 @@ Useful snippets for cleanups etc.
 
 Maintainers
 -----------
-
 * Sebastian Mandrean (<sebastian@0x.se>)
