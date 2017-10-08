@@ -10,9 +10,10 @@ Images
 ------
 | Name                                       | Description                                                    |
 |--------------------------------------------|----------------------------------------------------------------|
-| [zeroplusx/middleman](middleman)           | Ruby/Bundler/Middleman image for generating static websites    |
-| [zeroplusx/yarn](yarn)                     | node/npm/yarn image for working with nodejs applications       |
 | [zeroplusx/kube-workspace](kube-workspace) | Kubernetes workspace image containing kubectl, helm, curl etc. |
+| [zeroplusx/middleman](middleman)           | Ruby/Bundler/Middleman image for generating static websites    |
+| [zeroplusx/static-nginx](static-nginx)     | Base image for static website builds to be served using nginx  |
+| [zeroplusx/yarn](yarn)                     | node/npm/yarn image for working with nodejs applications       |
 
 Snippets
 --------
