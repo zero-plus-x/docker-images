@@ -8,12 +8,13 @@ Pre-requisites
 
 Images
 ------
-| Name                                       | Description                                                    |
-|--------------------------------------------|----------------------------------------------------------------|
-| [zeroplusx/kube-workspace](kube-workspace) | Kubernetes workspace image containing kubectl, helm, curl etc. |
-| [zeroplusx/middleman](middleman)           | Ruby/Bundler/Middleman image for generating static websites    |
-| [zeroplusx/static-nginx](static-nginx)     | Base image for static website builds to be served using nginx  |
-| [zeroplusx/yarn](yarn)                     | node/npm/yarn image for working with nodejs applications       |
+| Name                                           | Description                                                                    |
+|------------------------------------------------|--------------------------------------------------------------------------------|
+| [zeroplusx/gcloud-workspace](gcloud-workspace) | Google Cloud workspace image for authenticating and working with GCP resources |
+| [zeroplusx/kube-workspace](kube-workspace)     | Kubernetes workspace image containing kubectl, helm, curl etc.                 |
+| [zeroplusx/middleman](middleman)               | Ruby/Bundler/Middleman image for generating static websites                    |
+| [zeroplusx/static-nginx](static-nginx)         | Base image for static website builds to be served using nginx                  |
+| [zeroplusx/yarn](yarn)                         | node/npm/yarn image for working with nodejs applications                       |
 
 Snippets
 --------
