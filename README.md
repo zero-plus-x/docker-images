@@ -15,6 +15,7 @@ Images
 | [zeroplusx/middleman](middleman)               | Ruby/Bundler/Middleman image for generating static websites                    |
 | [zeroplusx/static-nginx](static-nginx)         | Base image for static website builds to be served using nginx                  |
 | [zeroplusx/yarn](yarn)                         | node/npm/yarn image for working with nodejs applications                       |
+| [zeroplusx/firebase-tools](firebase-tools)     | firebase-tools image for working with firebase applications                    |
 
 Snippets
 --------
