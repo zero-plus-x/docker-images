@@ -25,6 +25,7 @@ RUN apk --no-cache add git curl jq docker ca-certificates && \
 
 # Update & install gcloud dependencies
 RUN gcloud components update --quiet && \
+	gcloud auth configure-docker && \
 
 	# Kubectl
 	gcloud components install kubectl --quiet && \
