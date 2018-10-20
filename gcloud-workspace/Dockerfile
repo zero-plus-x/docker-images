@@ -7,6 +7,10 @@ ENV HELM_VERSION 2.11.0
 ENV HELM_SRC https://storage.googleapis.com/kubernetes-helm/helm-v$HELM_VERSION-linux-amd64.tar.gz
 ENV HELM_DEST /usr/local/bin/helm
 
+ENV SKAFFOLD_VERSION v0.16.0
+ENV SKAFFOLD_SRC https://storage.googleapis.com/skaffold/releases/$SKAFFOLD_VERSION/skaffold-linux-amd64
+ENV SKAFFOLD_DEST /usr/local/bin/skaffold
+
 # Install dependencies
 RUN apk --no-cache add git curl jq && \
 	apk --no-cache del wget && \
@@ -19,3 +23,7 @@ RUN curl -#SL $HELM_SRC | tar zxvf - && \
 	chmod +x $HELM_DEST && \
 	mkdir -p ~/.kube && \
 	helm init -c
+
+# Install skaffold
+RUN curl -#SLo $SKAFFOLD_DEST $SKAFFOLD_SRC && \
+	chmod +x $SKAFFOLD_DEST
