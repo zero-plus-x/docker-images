@@ -12,7 +12,7 @@ ENV SKAFFOLD_SRC https://storage.googleapis.com/skaffold/releases/$SKAFFOLD_VERS
 ENV SKAFFOLD_DEST /usr/local/bin/skaffold
 
 # Install dependencies
-RUN apk --no-cache add git curl jq && \
+RUN apk --no-cache add git curl jq docker && \
 	apk --no-cache del wget && \
 	gcloud components update --quiet && \
 	gcloud components install kubectl --quiet
