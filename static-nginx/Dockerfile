@@ -5,4 +5,4 @@ LABEL maintainer="Sebastian Mandrean <sebastian@0x.se>"
 
 RUN rm -rf /usr/share/nginx/html && mkdir -p /usr/share/nginx/html
 
-ADD nginx.conf /etc/nginx/conf.d/default.conf
+ADD default.conf /etc/nginx/conf.d/default.conf
