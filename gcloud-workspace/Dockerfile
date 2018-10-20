@@ -3,7 +3,7 @@ FROM google/cloud-sdk:alpine
 LABEL vendor="0+X"
 LABEL maintainer="Sebastian Mandrean <sebastian@0x.se>"
 
-ENV HELM_VERSION 2.6.2
+ENV HELM_VERSION 2.11.0
 ENV HELM_SRC https://storage.googleapis.com/kubernetes-helm/helm-v$HELM_VERSION-linux-amd64.tar.gz
 ENV HELM_DEST /usr/local/bin/helm
 
