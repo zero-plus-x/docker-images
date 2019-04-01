@@ -24,4 +24,9 @@ RUN curl -#SL -o $KUBE_DEST $KUBE_SRC && \
 	mkdir -p ~/.kube && \
 	helm init -c
 
+# Add Helm repos
+RUN helm repo add zeroplusx http://charts.0x.se && \
+    helm repo add incubator https://kubernetes-charts-incubator.storage.googleapis.com/ && \
+    helm repo update
+
 CMD kubectl
