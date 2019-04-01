@@ -40,3 +40,8 @@ RUN gcloud components update --quiet && \
 	# Skaffold
     curl -#SLo $SKAFFOLD_DEST $SKAFFOLD_SRC && \
 	chmod +x $SKAFFOLD_DEST
+
+# Add Helm repos
+RUN helm repo add zeroplusx http://charts.0x.se && \
+    helm repo add incubator https://kubernetes-charts-incubator.storage.googleapis.com/ && \
+    helm repo update
