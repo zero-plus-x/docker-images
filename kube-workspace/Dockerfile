@@ -3,7 +3,7 @@ FROM alpine:3.9
 LABEL vendor="0+X"
 LABEL maintainer="Sebastian Mandrean <sebastian@0x.se>"
 
-ARG KUBE_VERSION=1.14.10
+ARG KUBE_VERSION=1.15.9
 ARG KUBE_SRC=https://storage.googleapis.com/kubernetes-release/release/v$KUBE_VERSION/bin/linux/amd64/kubectl
 ARG KUBE_DEST=/usr/local/bin/kubectl
 
