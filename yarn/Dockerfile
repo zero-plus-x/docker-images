@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:lts-alpine
 
 LABEL vendor="0+X"
 LABEL maintainer="Sebastian Mandrean <sebastian@0x.se>"

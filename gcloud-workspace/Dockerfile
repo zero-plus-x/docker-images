@@ -3,15 +3,15 @@ FROM google/cloud-sdk:alpine
 LABEL vendor="0+X"
 LABEL maintainer="Sebastian Mandrean <sebastian@0x.se>"
 
-ARG KUBE_VERSION=1.15.9
+ARG KUBE_VERSION=1.16.13
 ARG KUBE_SRC=https://storage.googleapis.com/kubernetes-release/release/v$KUBE_VERSION/bin/linux/amd64/kubectl
 ARG KUBE_DEST=/usr/local/bin/kubectl
 
-ARG HELM_VERSION=2.16.1
-ARG HELM_SRC=https://storage.googleapis.com/kubernetes-helm/helm-v$HELM_VERSION-linux-amd64.tar.gz
+ARG HELM_VERSION=3.3.4
+ARG HELM_SRC=https://get.helm.sh/helm-v$HELM_VERSION-linux-amd64.tar.gz
 ARG HELM_DEST=/usr/local/bin/helm
 
-ARG SKAFFOLD_VERSION=1.3.1
+ARG SKAFFOLD_VERSION=1.15.0
 ARG SKAFFOLD_SRC=https://storage.googleapis.com/skaffold/releases/v$SKAFFOLD_VERSION/skaffold-linux-amd64
 ARG SKAFFOLD_DEST=/usr/local/bin/skaffold
 
@@ -39,7 +39,6 @@ RUN gcloud components update --quiet && \
     mv linux-amd64/helm $HELM_DEST && rm -rf linux-amd64 && \
     chmod +x $HELM_DEST && \
     mkdir -p ~/.kube && \
-    helm init -c && \
 
     # Skaffold
     curl -#SLo $SKAFFOLD_DEST $SKAFFOLD_SRC && \
