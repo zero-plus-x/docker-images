@@ -29,7 +29,6 @@ RUN curl -#SLo $KUBE_DEST $KUBE_SRC && \
     mv linux-amd64/helm $HELM_DEST && rm -rf linux-amd64 && \
     chmod +x $HELM_DEST && \
     mkdir -p ~/.kube && \
-    helm init -c && \
 
     curl -#SLo $SKAFFOLD_DEST $SKAFFOLD_SRC && \
     chmod +x $SKAFFOLD_DEST
