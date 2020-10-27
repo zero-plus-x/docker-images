@@ -16,7 +16,7 @@ RUN apk --no-cache add \
 		build-base && \
 	apk --no-cache del wget
 
-ADD entrypoint.sh /
+COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
 

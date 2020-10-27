@@ -14,7 +14,7 @@ RUN echo "@community http://dl-4.alpinelinux.org/alpine/edge/community/" >> /etc
 		yarn@community && \
 	apk --no-cache del wget
 
-ADD entrypoint.sh /
+COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
 
