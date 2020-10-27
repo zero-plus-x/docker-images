@@ -21,7 +21,7 @@ More likely is that `zeroplusx/static-nginx` will be used as a base image for st
 ```dockerfile
 FROM zeroplusx/static-nginx
 
-ADD public/ /usr/share/nginx/html
+COPY public/ /usr/share/nginx/html
 ```
 
 Maintainers

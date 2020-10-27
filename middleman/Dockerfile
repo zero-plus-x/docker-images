@@ -1,4 +1,4 @@
-FROM ruby:2.4-alpine3.11
+FROM ruby:2.6-alpine3.11
 
 LABEL vendor="0+X"
 LABEL maintainer="Sebastian Mandrean <sebastian@0x.se>"
@@ -16,7 +16,7 @@ RUN apk --no-cache add \
 		build-base && \
 	apk --no-cache del wget
 
-ADD entrypoint.sh /
+COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
 
